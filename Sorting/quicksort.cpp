@@ -32,15 +32,3 @@ void quickSort(std::list<int> &list)
   list.splice(list.end(), pivotList);
   list.splice(list.end(), rightList);
 }
-
-/*
-int main(int argc, char const *argv[]) 
-{
-  std::list<int> list = {4, 5, 2, 3, 0, 1, 7};
-  quickSort(list);
-  for(auto a: list) {
-    std::cout << a << " ";
-  }
-  std::cout << std::endl;
-  return 0;
-}*/
