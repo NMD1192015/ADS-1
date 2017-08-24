@@ -1,4 +1,5 @@
 #include <list>
+#include "sorting.hh"
 
 void bubblesort(std::list<int>& list) {
 	bool flag_swap = true;

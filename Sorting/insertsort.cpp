@@ -1,4 +1,5 @@
 #include <list>
+#include "sorting.hh"
 
 // NOTE: using swap for this algorithm is unefficent
 // but more clean for mental clarity

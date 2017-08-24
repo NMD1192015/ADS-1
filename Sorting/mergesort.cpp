@@ -1,4 +1,5 @@
 #include <list>
+#include "sorting.hh"
 
 void merge(std::list<int> &l1, std::list<int> &l2) {
     auto iter = l1.begin();
