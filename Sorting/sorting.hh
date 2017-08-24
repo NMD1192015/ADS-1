@@ -3,13 +3,17 @@
 
 #include <list>
 
-void insertsort(std::list<int> &list);
+namespace ads {
 
-void quicksort(std::list<int> &list);
+    void insertsort(std::list<int> &list);
 
-void mergesort(std::list<int> &list);
+    void quicksort(std::list<int> &list);
 
-void bubblesort(std::list<int> &list);
+    void mergesort(std::list<int> &list);
+
+    void bubblesort(std::list<int> &list);
+
+};
 
 //void insert_sort(int V[], int n);
 //void bubble_sort(int V[], int n);

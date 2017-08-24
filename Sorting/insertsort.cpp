@@ -4,7 +4,7 @@
 // NOTE: using swap for this algorithm is unefficent
 // but more clean for mental clarity
 
-void insertsort(std::list<int> &list)  {
+void ads::insertsort(std::list<int> &list)  {
 	// Iterate from the second element onward
 	for(auto i = next(list.begin()); i != list.end(); ++i) {
 		// From i, iterate backward

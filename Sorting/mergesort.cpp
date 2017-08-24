@@ -15,7 +15,7 @@ void merge(std::list<int> &l1, std::list<int> &l2) {
     l1.splice(l1.end(), l2);
 }
 
-void mergesort(std::list<int> &l1) {
+void ads::mergesort(std::list<int> &l1) {
     // Let's pick the middle element
     auto middle = l1.begin();
     std::advance(middle, std::distance(l1.begin(), l1.end())/2);

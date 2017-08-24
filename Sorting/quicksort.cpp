@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void quicksort(std::list<int> &list) {
+void ads::quicksort(std::list<int> &list) {
     // pick the pivot element
     const auto pivot = list.begin();
     // iterate through the rest of the list
