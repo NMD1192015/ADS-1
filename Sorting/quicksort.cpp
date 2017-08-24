@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void quickSort(std::list<int> &list) {
+void quicksort(std::list<int> &list) {
     // pick the pivot element
     const auto pivot = list.begin();
     // iterate through the rest of the list
@@ -20,8 +20,8 @@ void quickSort(std::list<int> &list) {
     pivotList.splice(pivotList.begin(), list, pivot, next(pivot));
 
     // if left or right are > 1, apply quicksort
-    if (list.size() > 1) quickSort(list);
-    if (rightList.size() > 1) quickSort(rightList);
+    if (list.size() > 1) quicksort(list);
+    if (rightList.size() > 1) quicksort(rightList);
 
     // merge the 2 lists back
     list.splice(list.end(), pivotList);

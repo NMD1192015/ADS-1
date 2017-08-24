@@ -14,7 +14,7 @@ void merge(std::list<int> &l1, std::list<int> &l2) {
     l1.splice(l1.end(), l2);
 }
 
-void mergeSort(std::list<int> &l1) {
+void mergesort(std::list<int> &l1) {
     // Let's pick the middle element
     auto middle = l1.begin();
     std::advance(middle, std::distance(l1.begin(), l1.end())/2);
@@ -24,8 +24,8 @@ void mergeSort(std::list<int> &l1) {
     l2.splice(l2.begin(), l1, middle, l1.end());
 
     // Repeat until base case if found
-    if (l1.size() > 1) mergeSort(l1);
-    if (l2.size() > 1) mergeSort(l2);
+    if (l1.size() > 1) mergesort(l1);
+    if (l2.size() > 1) mergesort(l2);
 
     merge(l1, l2);
 }

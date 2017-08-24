@@ -1,6 +1,6 @@
 #include <list>
 
-void bubble_sort(std::list<int>& list) {
+void bubblesort(std::list<int>& list) {
 	bool flag_swap = true;
 
 	while (flag_swap) {
