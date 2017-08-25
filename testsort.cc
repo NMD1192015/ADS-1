@@ -34,11 +34,11 @@ int main(int argc, char const *argv[]) {
     list<int> numberList = {4, 5, 2, 3, 0, 1, 7};
     list<tuple<string, void (*)(std::list<int>&)>> sortList;
 
-    sortList.emplace_back("bubblesort", quicksort);
+    sortList.emplace_back("bubblesort", bubblesort);
     sortList.emplace_back("quicksort", quicksort);
     sortList.emplace_back("insertsort", insertsort);
     sortList.emplace_back("mergesort", mergesort);
-    //sortList.emplace_back("fakesort", fakeSort);
+    sortList.emplace_back("fakesort", fakeSort);
 
     for(auto& val: sortList) {
         if (!test(numberList, val)) break;

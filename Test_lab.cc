@@ -20,6 +20,8 @@ void print_list(list<int>& List) {
 
 int main() {
 
+	int choice;
+
 	std::list<int> List(10);
 	std::iota(List.begin(), List.end(), 0);
 	List.reverse();
@@ -29,7 +31,6 @@ int main() {
 
 	bigspace();
 
-	int choice;
 	std::cout<<" 1. Insertion_Sort		2. Bubble_Sort		3. Merge_Sort" << std::endl;
 	std::cout<<" 4. Quick_Sort" << std::endl;
 	std::cout<<">>> "; std::cin>>choice;
