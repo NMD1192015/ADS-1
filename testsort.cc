@@ -38,7 +38,7 @@ int main(int argc, char const *argv[]) {
     sortList.emplace_back("quicksort", quicksort);
     sortList.emplace_back("insertsort", insertsort);
     sortList.emplace_back("mergesort", mergesort);
-    sortList.emplace_back("fakesort", fakeSort);
+    //sortList.emplace_back("fakesort", fakeSort);
 
     for(auto& val: sortList) {
         if (!test(numberList, val)) break;
