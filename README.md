@@ -1,6 +1,15 @@
 ## ADS libs
 
-A simple c++ implementation of the most common algorithms used at university course.
+A simple c++ implementation of the most common algorithms and data structures used for learning purpose.
+
+### How to build
+
+```sh
+mkdir build
+cd build
+cmake ..
+make
+```
 
 ### Sorting
 
